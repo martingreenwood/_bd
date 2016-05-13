@@ -1,0 +1,48 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+}
+
+.share_buttons {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10.5px 0;
+    text-align: center;
+}
+
+.share_buttons a {
+    font-size: 16px;
+    background: #878787;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 2px;
+    padding: 9px 0px;
+    width: 35px;
+    color: white !important;
+    line-height: normal;
+    transition: all 500ms ease-in-out;
+}
+
+.share_buttons a:hover, .share_buttons a:visited {
+    color: inherit;
+}
+
+.share_buttons .fb:hover {
+    background: #3067a3;
+}
+.share_buttons .tw:hover {
+    background: #03b3ee;
+}
+.share_buttons .em:hover {
+    background: #767676;
+}
+.share_buttons .pn:hover {
+    background: #b9252c;
+}
+.share_buttons .gp:hover {
+    background: #e15440;
+}

@@ -1,0 +1,286 @@
+.module, .stack {
+	overflow: hidden;
+	clear: left;
+	position: relative;
+
+	// modules padding top
+	&.mpt-lb-0, &.smt-lb-0 {
+		padding-top: ($font__main-line-height * 0);
+	}
+	
+	&.mpt-lb-0-1, &.smt-lb-0-1 {
+		padding-top: ($font__main-line-height * 0.1);
+	}
+	
+	&.mpt-lb-0-25, &.smt-lb-0-25 {
+		padding-top: ($font__main-line-height * 0.25);
+	}
+	
+	&.mpt-lb-0-5, &.smt-lb-0-5 {
+		padding-top: ($font__main-line-height * 0.5);
+	}
+	
+	&.mpt-lb-1, &.smt-lb-1 {
+		padding-top: ($font__main-line-height * 1);
+	}
+	
+	&.mpt-lb-1-5, &.smt-lb-1-5 {
+		padding-top: ($font__main-line-height * 1.5);
+	}
+	
+	&.mpt-lb-2, &.smt-lb-2 {
+		padding-top: ($font__main-line-height * 2);
+	}
+	
+	&.mpt-lb-2-5, &.smt-lb-2-5 {
+		padding-top: ($font__main-line-height * 2.5);
+	}
+	
+	&.mpt-lb-3, &.smt-lb-3 {
+		padding-top: ($font__main-line-height * 3);
+	}
+
+	// Modules padding bottom
+	&.mpb-lb-0, &.smb-lb-0 {
+		padding-bottom: ($font__main-line-height * 0);
+	}
+	
+	&.mpb-lb-0-1, &.smb-lb-0-1 {
+		padding-bottom: ($font__main-line-height * 0.1);
+	}
+	
+	&.mpb-lb-0-25, &.smb-lb-0-25 {
+		padding-bottom: ($font__main-line-height * 0.25);
+	}
+	
+	&.mpb-lb-0-5, &.smb-lb-0-5 {
+		padding-bottom: ($font__main-line-height * 0.5);
+	}
+	
+	&.mpb-lb-1, &.smb-lb-1 {
+		padding-bottom: ($font__main-line-height * 1);
+	}
+	
+	&.mpb-lb-1-5, &.smb-lb-1-5 {
+		padding-bottom: ($font__main-line-height * 1.5);
+	}
+	
+	&.mpb-lb-2, &.smb-lb-2 {
+		padding-bottom: ($font__main-line-height * 2);
+	}
+	
+	&.mpb-lb-2-5, &.smb-lb-2-5 {
+		padding-bottom: ($font__main-line-height * 2.5);
+	}
+	
+	&.mpb-lb-3, &.smb-lb-3 {
+		padding-bottom: ($font__main-line-height * 3);
+	}
+}
+
+// GRID Module
+.grid-module {
+	overflow: hidden !important;
+}
+
+// MASONRY Module
+.masonry-module {
+	overflow: hidden !important;
+  
+	.masonry-module-inner {
+		overflow: hidden;
+	
+		.masonry {
+			overflow: hidden;
+		}
+	}
+}
+
+// ROW Module
+.row-module {
+	overflow: hidden;
+  
+	.figcaption {
+		background: transparent !important;
+	}
+  
+	.figcaption-bg {
+		background: $row_item_hover_background_color;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		display: none;
+	}
+  
+	.row {
+		overflow: hidden;
+	
+		.row-item {
+			overflow: hidden;
+			border: 0px solid transparent !important;
+		  
+			.img-holder {
+				height: $row_item_default_height;
+			
+				img {
+					height: $row_item_default_height;
+				}
+			}
+		}
+	}
+}
+
+// BLOG Module
+.blog-module {
+	overflow: hidden;
+
+	// Captions
+	.figcaption, p, .blog-link {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	// Link
+	.blog-link {
+		display: block;
+	}
+
+	// Image max width
+	.img-holder img {
+		max-width: 100%;
+	}
+}
+
+// INDEX Module
+.index-module {
+	margin-top: 0px;
+
+	.index-item-inner {
+		padding-top: $index_item_padding_top;
+		padding-bottom: $index_item_padding_bottom;
+		overflow: hidden;
+
+	.col {
+		overflow: hidden;
+			
+			.col-inner-hori {
+				overflow: hidden;
+			}
+		}
+	}
+
+	.index-item {
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.index-item .index-separator {
+		position: absolute;
+
+		hr {
+			border-top: $separator_height_alt solid $borders_color !important;
+		}
+	}
+}
+
+// SEPARATOR Module
+.separator-module {
+	overflow: visible;
+
+	.separator-hr {
+		position: absolute;
+		z-index: 99;
+		overflow: visible;
+		//height: $separator_height + 1;
+
+		hr {
+			// Already set
+		}
+	}
+}
+
+// MASONRY
+.masonry-holder {
+	overflow: hidden;
+	width: 100%;
+	overflow: hidden;
+
+	.masonry {
+		overflow: hidden;
+		width: 100%;
+	}
+}
+
+// Cover space
+#cover-space {
+position: absolute;
+z-index: 1;
+left: 0;
+top: 0;
+height:100%;
+width: 100%;
+overflow: hidden;
+
+  #cover-space-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events:none;
+  }
+  
+  #cover-space-bg.hide {
+    display: none;
+  }
+  
+  #cover-space-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    
+    .bleed {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  #cover-space-fix {
+    position: relative;
+    //z-index: 4;
+    height: 100%;
+  }
+
+  #cover-space-inner {
+    position: relative;
+    height: 100%;
+    margin-left: $site_margin_left;
+    margin-right: $site_margin_right;
+    //z-index: 3;
+    
+    #cover-title {
+      position: absolute;
+      top: 50%;
+      z-index:3;
+    }
+    #cover-title.top {
+      top: 0%;
+    }
+    #cover-title.middle {
+      top: 50%;
+    }
+    #cover-title.bottom {
+      top: auto;
+      bottom: 0px;
+      position: absolute;
+    }
+    
+  }
+  
+}

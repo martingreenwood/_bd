@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'webiconsregular';
+    src: url('fonts/webicons/webicons-regular-webfont.eot');
+    src: url('fonts/webicons/webicons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/webicons/webicons-regular-webfont.woff') format('woff'),
+         url('fonts/webicons/webicons-regular-webfont.ttf') format('truetype'),
+         url('fonts/webicons/webicons-regular-webfont.svg#webiconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.default {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: $font__main-size;
+	line-height: $font__main-line-height;
+}
+
+.default {
+	font-family: $font__main;
+	font-size: $font__main-size;
+	line-height: $font__main-line-height;
+	//display: flex; cannot think why i did this...
+
+	&.lb {
+		margin-bottom: $default_font_line_height;
+	}
+
+	&.lb-0-1 {
+		margin-bottom: $font__main-line-height / 10;
+	}
+	
+	&.lb-0-25 {
+		margin-bottom: $font__main-line-height / 4;
+	}
+	
+	&.lb-0-5 {
+		margin-bottom: $font__main-line-height / 2;
+	}
+	
+	&.lb-1 {
+		margin-bottom: $font__main-line-height;
+	}
+	
+	&.lb-1-5 {
+		margin-bottom: $font__main-line-height * 1.5;
+	}
+	
+	&.lb-2 {
+		margin-bottom: $font__main-line-height * 2;
+	}
+	
+	&.lb-2-5 {
+		margin-bottom: $font__main-line-height * 2.5;
+	}
+	
+	&.lb-3 {
+		margin-bottom: $font__main-line-height * 3;
+	}
+
+	.break, p, blockquote, pre {
+		margin-bottom: $font__main-line-height;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.mega {
+	font-family: $font__main-mega;
+	font-size: $font__main-mega-size;
+	line-height: $font__main-mega-line-height;
+	//display: flex; cannot think why i did this...
+
+	&.lb {
+    	margin-bottom: $mega_font_line_height;
+  	}
+
+	&.lb-0-1 {
+		margin-bottom: $font__main-mega-line-height / 10;
+	}
+	
+	&.lb-0-25 {
+		margin-bottom: $font__main-mega-line-height / 4;
+	}
+	
+	&.lb-0-5 {
+		margin-bottom: $font__main-mega-line-height / 2;
+	}
+	
+	&.lb-1 {
+		margin-bottom: $font__main-mega-line-height;
+	}
+	
+	&.lb-1-5 {
+		margin-bottom: $font__main-mega-line-height * 1.5;
+	}
+	
+	&.lb-2 {
+		margin-bottom: $font__main-mega-line-height * 2;
+	}
+	
+	&.lb-2-5 {
+		margin-bottom: $font__main-mega-line-height * 2.5;
+	}
+	
+	&.lb-3 {
+		margin-bottom: $font__main-mega-line-height * 3;
+	}
+
+	.break, p, blockquote, pre {
+		margin-bottom: $font__main-mega-line-height;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.huge {
+	font-family: $font__main-huge;
+	font-size: $font__main-huge-size;
+	line-height: $font__main-huge-line-height;
+	//display: flex; cannot think why i did this...
+
+	&.lb {
+    	margin-bottom: $huge_font_line_height;
+  	}
+
+	&.lb-0-1 {
+		margin-bottom: $font__main-huge-line-height / 10;
+	}
+	
+	&.lb-0-25 {
+		margin-bottom: $font__main-huge-line-height / 4;
+	}
+	
+	&.lb-0-5 {
+		margin-bottom: $font__main-huge-line-height / 2;
+	}
+	
+	&.lb-1 {
+		margin-bottom: $font__main-huge-line-height;
+	}
+	
+	&.lb-1-5 {
+		margin-bottom: $font__main-huge-line-height * 1.5;
+	}
+	
+	&.lb-2 {
+		margin-bottom: $font__main-huge-line-height * 2;
+	}
+	
+	&.lb-2-5 {
+		margin-bottom: $font__main-huge-line-height * 2.5;
+	}
+	
+	&.lb-3 {
+		margin-bottom: $font__main-huge-line-height * 3;
+	}
+
+	.break, p, blockquote, pre {
+		margin-bottom: $font__main-huge-line-height;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.large {
+	font-family: $font__main-large;
+	font-size: $font__main-large-size;
+	line-height: $font__main-large-line-height;
+	//display: flex; cannot think why i did this...
+
+	&.lb {
+		margin-bottom: $large_font_line_height;
+	}
+
+	&.lb-0-1 {
+		margin-bottom: $font__main-large-line-height / 10;
+	}
+	
+	&.lb-0-25 {
+		margin-bottom: $font__main-large-line-height / 4;
+	}
+	
+	&.lb-0-5 {
+		margin-bottom: $font__main-large-line-height / 2;
+	}
+	
+	&.lb-1 {
+		margin-bottom: $font__main-large-line-height;
+	}
+	
+	&.lb-1-5 {
+		margin-bottom: $font__main-large-line-height * 1.5;
+	}
+	
+	&.lb-2 {
+		margin-bottom: $font__main-large-line-height * 2;
+	}
+	
+	&.lb-2-5 {
+		margin-bottom: $font__main-large-line-height * 2.5;
+	}
+	
+	&.lb-3 {
+		margin-bottom: $font__main-large-line-height * 3;
+	} 
+
+	.break, p, blockquote, pre {
+		margin-bottom: $font__main-large-line-height;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+}
+
+.small {
+	font-family: $font__main-small;
+	font-size: $font__main-small-size;
+	line-height: $font__main-small-line-height;
+	//display: flex; cannot think why i did this...
+
+	&.lb {
+		margin-bottom: $small_font_line_height;
+	}
+
+	&.lb-0-1 {
+		margin-bottom: $font__main-small-line-height / 10;
+	}
+	
+	&.lb-0-25 {
+		margin-bottom: $font__main-small-line-height / 4;
+	}
+	
+	&.lb-0-5 {
+		margin-bottom: $font__main-small-line-height / 2;
+	}
+	
+	&.lb-1 {
+		margin-bottom: $font__main-small-line-height;
+	}
+	
+	&.lb-1-5 {
+		margin-bottom: $font__main-small-line-height * 1.5;
+	}
+	
+	&.lb-2 {
+		margin-bottom: $font__main-small-line-height * 2;
+	}
+	
+	&.lb-2-5 {
+		margin-bottom: $font__main-small-line-height * 2.5;
+	}
+	
+	&.lb-3 {
+		margin-bottom: $font__main-small-line-height * 3;
+	}
+
+	.break, p, blockquote, pre {
+		margin-bottom: $font__main-small-line-height;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+}
+
+.empty-trick {
+	line-height: 1px !important;
+	font-size: 1px !important;
+	height: 1px  !important;
+}
+
+.icons, .rsArrow {
+	font-family: 'webiconsregular'!important;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+
+@import "headings";
+
+@import "copy";

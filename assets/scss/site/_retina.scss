@@ -1,0 +1,16 @@
+/* RETINA */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+
+	#header-inner {
+		
+		#logo-h1 {
+			
+			height: $logo_height; 
+
+			#logo-image {
+				background: transparent url($logo_retina) no-repeat !important;
+				background-size: $logo_width $logo_height !important;
+			}
+		}
+	} 
+}

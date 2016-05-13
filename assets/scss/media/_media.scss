@@ -1,0 +1,76 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+// Make sure embeds and iframes fit their containers.
+embed,
+iframe,
+object {
+	max-width: 100%; 
+}
+
+// MEDIA
+.figcaption {
+  padding: $caption_padding;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: $media_loader_bg_color;
+  position: relative;
+  z-index: 99;
+}
+
+.img-holder {
+  width:100%;
+  min-width:100%;
+  max-width: 100%;
+  background: $media_loader_bg_color;
+  position: relative;
+  display: block;
+  z-index: 100;
+
+
+  .focus-mode {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 102;
+    line-height: 75% !important;
+    margin: $media_focus_inner_padding;
+    cursor: pointer;    
+    display: none;
+  }
+  
+  &:hover .focus-mode {
+    display: block;
+  }
+  
+}
+
+.img-holder img {
+  width:100%;
+  height:auto;
+}
+
+.img-holder.ready {
+  background: transparent !important;
+}
+
+.entry-attachment a {
+  border-bottom: 0px transparent !important;
+}
+
+
+// Captions
+@import "captions";
+
+// Galleries
+@import "galleries";

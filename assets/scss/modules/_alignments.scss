@@ -1,0 +1,49 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
+
+.left {
+	float:left !important;
+}
+.right {
+	float:right !important;
+}
+.align-left {
+	text-align: left !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.align-center {
+	text-align: center !important;
+}
+
+.hide {
+	display:none;
+}
+.block {
+	display: block; 
+}
+.hundred {
+	width: 100% !important;
+}
+.dimmed, .dimmed a {
+	color: $index_item_dimmed_color;
+}
+.active, .active a {
+	color: $index_item_active_color;
+}

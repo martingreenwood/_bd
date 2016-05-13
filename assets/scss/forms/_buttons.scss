@@ -1,0 +1,44 @@
+button, input[type="submit"] {
+	margin: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: $forms_padding+px;
+	cursor: pointer;
+	display: inline;
+	width: auto;
+	text-align: left;
+	background: $button_background_color;
+	border: $forms_border_width+px solid $button_background_color;
+	color: $button_text_color;
+	clear: both !important;
+	-webkit-transition: all 300ms ease-in-out;  /* Saf3.2+, Chrome */
+	-moz-transition: all 300ms ease-in-out;  /* FF4+ */
+	-ms-transition: all 300ms ease-in-out;  /* IE10? */
+	-o-transition: all 300ms ease-in-out;  /* Opera 10.5+ */
+	transition: all 300ms ease-in-out;
+}
+
+button:hover, input[type="submit"]:hover {
+	background: $button_hover_background_color;
+	border: $forms_border_width+px solid $button_hover_background_color;
+	color: $button_hover_text_color;
+}
+
+// Input Placeholder Color (placeholder's becoming standard..)
+::-webkit-input-placeholder {
+	color: $text_color;
+	opacity: 0.5;
+}
+:-moz-placeholder {
+	color: $text_color;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+:-ms-input-placeholder {
+	color: $text_color;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}

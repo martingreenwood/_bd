@@ -1,0 +1,61 @@
+// HEADER
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: $header_background_color !important;
+	display: inline-flex;
+}
+
+.header-inner {
+	padding-top: $header_top_padding;
+	padding-bottom: $header_bottom_padding;
+	padding-right: $site_margin_right;
+	padding-left: $site_margin_left;
+
+    float: left;
+    width: 100%;
+
+	#header-separator {
+	    border-top: $header_separator_height solid $borders_color;
+	    margin-bottom: $header_separator_bottom_margin;
+	}
+
+	#logo-h1 {
+	    line-height: 0px !important; 
+	    height: $logo__height;
+	    overflow: hidden;
+
+	    @media screen and (min-width: 1024px) {
+	    	padding-top: 4px;
+	    	padding-bottom: 4px;
+	    }
+    
+		#logo-image {
+			height: $logo__height;
+			width: $logo__width;
+			display: block;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			background-size: $logo__width $logo__height !important;
+			border-bottom: 0px solid transparent !important;
+			position: absolute;
+			//width: 100%;
+		}
+	}
+}
+
+#header.fixed {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 9989;
+}
+
+#header.fixed .header-inner {
+	padding-right: $site_margin_right;
+	padding-left: $site_margin_left;
+}

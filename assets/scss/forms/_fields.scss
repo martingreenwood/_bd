@@ -1,0 +1,102 @@
+/***
+Forms
+***/
+
+input, textarea, button, select {
+	margin-bottom: $forms_margin_bottom+px;
+}
+
+input, textarea, select {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	outline:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: $forms_padding+px;
+	text-align: left;
+	-webkit-appearance: none;
+	border: $forms_border_width+px solid $forms_border_color;
+	width:100%;
+	background: $forms_background_color;
+	color: $forms_text_color;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	margin-bottom: $forms_margin_bottom;
+	-webkit-transition: all 300ms ease-in-out;  /* Saf3.2+, Chrome */
+	-moz-transition: all 300ms ease-in-out;  /* FF4+ */
+	-ms-transition: all 300ms ease-in-out;  /* IE10? */
+	-o-transition: all 300ms ease-in-out;  /* Opera 10.5+ */
+	transition: all 300ms ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: $forms_border_width+px solid $forms_focus_border_color;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin-bottom: 0;
+	width: auto;
+	height: auto;
+	background: none;
+	margin-left: 2px;
+	margin-right: 10px;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: checkbox;
+}
+
+input[type="radio"] {
+	-webkit-appearance: radio;
+}
+
+label {
+	display: block;
+	width: 100%;
+}
+
+button, input[type="submit"] {
+	text-align: center;
+	background: $button_background_color;
+	color: $button_text_color;
+
+	&:hover {
+		background: $button_hover_background_color;
+		color: $button_hover_text_color;			
+	}
+}
+
+
+
+// MAILCHIMP
+
+.mc-field-group {
+	float: left;
+	width: calc(50% - 6.75px);
+
+	input {
+		width: 100%;
+		background: $forms_background_color;
+		color: $forms_text_color;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+
+	button, input[type="submit"] {
+		text-align: center;
+		background: $button_background_color;
+		color: $button_text_color;
+	}
+
+	&:nth-child(even) {
+		margin-left: 6.75px;
+	}
+
+	&:nth-child(odd) {
+		margin-right: 6.75px;
+	}
+}

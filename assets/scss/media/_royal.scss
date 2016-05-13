@@ -1,0 +1,112 @@
+// Default slideshow
+.royalSlider.default-slideshow {
+	z-index: 100;
+
+	.rsArrow {
+		padding: $slideshow_inner_margin;
+		overflow: hidden;
+		top: 50%;
+		position: absolute;
+		height: auto;
+	}
+
+	.rsArrowLeft {
+		left: 0px;
+		text-align: left !important;
+	}
+
+	.rsArrowRight {
+		right: 0px;
+		text-align: left !important;
+	}
+
+	.rsBullets {
+		bottom: $slideshow_inner_margin + 2 !important;
+	}
+
+	.rsBullet span {
+		background: $text_color;
+	}
+
+	.rsCaption {
+		padding: $slideshow_inner_margin;
+	}
+
+	.rsCaption.top-align-left {
+		top: 0;
+		left: 0;
+		width:25%;
+	}
+	.rsCaption.top-align-center {
+		top: 0;
+		left: 33%;
+		width:33%;
+		text-align: center;
+	}
+	.rsCaption.top-align-right {
+		top: 0;
+		left: 50%;
+	}
+
+	.rsCaption.bottom-align-left {
+		top: auto;
+		bottom: 0;
+		left: 0;
+		width:25%;
+	}
+	.rsCaption.bottom-align-center {
+		top: auto;
+		bottom: 30px;
+		left: 33%;
+		width:33%;
+		text-align: center;
+	}
+	.rsCaption.bottom-align-right {
+		top: auto;
+		bottom: 0px;
+		left: 75%;
+		width: 25%;
+		text-align: right;
+	}
+
+	.rsCaption.super-center {
+		text-align: center;
+		margin: 0px;
+		top: 25%;
+		height: 50%;
+		width: 50%;
+		left: 25%;
+	}
+	.rsCaption.super-center:before {
+		content: '';
+		display: inline-block;
+		height: 100%; 
+		vertical-align: middle;
+		margin-right: -0.25em; /* Adjusts for spacing */
+	}
+	.rsCaption.super-center p {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0px;
+	}
+
+	.rsCaptionEmpty {
+		display: none;
+	}
+
+}
+
+
+
+// Row slideshow
+
+
+
+// Cover slideshow
+.royalSlider.cover-slideshow {
+	z-index: 100;
+
+	.rsBullets {
+		bottom: $default_font_line_height !important;
+	}
+}
