@@ -142,6 +142,31 @@
 	}
 }
 
+@media (min-width: 1200px) {
+	#content {
+		padding-top: 84px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+	#content {
+		padding-top: 138px;
+	}
+}
+
+@media (min-width: 1025px) {
+	a#cart-icon {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	a#cart-icon {
+		float: right;
+		margin-right: 7px;
+	}
+}
+
 /*=================================================
 =            TABLET SCREEN / LANDSCAPE            =
 =================================================*/
@@ -149,15 +174,18 @@
 
 @media (max-width: 1024px) and (min-width: 768px) {
 
-
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   
   #block {height: 120% !important;}
 
-  #content {
-	padding-left: $tablet_site_margin_left !important;
-	padding-right: $tablet_site_margin_right !important;
-  }
+	#content {
+		padding-top: 98px;
+	}
+
+	#content {
+		padding-left: $tablet_site_margin_left !important;
+		padding-right: $tablet_site_margin_right !important;
+	}
 
 	.woocommerce-checkout-review-order-table .titles {
 		display: none;
@@ -1150,8 +1178,11 @@
 =========================================*/
 
 @media (max-width: 767px) {
+	//-webkit-tap-highlight-color: rgba(0,0,0,0);
 
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+	#content {
+		padding-top: 70px;
+	}
 
 	.woocommerce .cart .separator-module {
 		padding-top: 12.5px;
@@ -1958,7 +1989,7 @@
   }
   
   #content p {
-	//padding-right: 0px;
+	padding-right: 0px;
   }
   
   #border-left, #border-right {
@@ -2122,27 +2153,3 @@
 }
 
 
-
-
-
-
-
-
-
-
-// MOBILE
-
-body.mobile {
-
-
-}
-
-
-
-// TABLET
-
-body.tablet {
-
- 
-
-}

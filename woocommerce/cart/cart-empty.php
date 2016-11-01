@@ -27,16 +27,19 @@ wc_print_notices();
 	<div class="col-inner-hori">
 		<div class="large align-left lb-1">
 			<div class="text-item">
-			
 				<p class="cart-empty">
-					<?php _e( 'Your cart is currently empty.', 'woocommerce' ) ?>
+					Your Shopping Cart
+				</p>
+
+				<p class="cart-empty">
+					You have no items in your shopping cart.
 				</p>
 
 				<?php do_action( 'woocommerce_cart_is_empty' ); ?>
 
 				<p class="return-to-shop">
 					<a class="" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-						<?php _e( 'Return To Shop', 'woocommerce' ) ?>
+						<?php _e( 'Click here to continue shopping', 'woocommerce' ) ?>
 					</a>
 				</p>
 			

@@ -79,16 +79,16 @@
 
               // build the li item
               if ($cart_contents_count == 0) {
-                $menu_item = '<li class="cart_menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="wcmenucart-contents" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
+                $menu_item = '<li class="cart_menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $start_shopping .'">';
               } else {
                 $menu_item = '<li class="cart_menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $viewing_cart .'">';
               }
               if ($cart_contents_count == 0) {
-                $menu_item .= 'Cart';
+                $menu_item .= '<span><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="cart-contents"> 0 / </span>';
               } else {
-                $menu_item .= '<span class="red">Cart <span class="cart-contents show">( '.$cart_contents.' )</span>';
+                $menu_item .= '<i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="cart-contents red"> '.$cart_contents.' / </span>';
               }
-              //$menu_item .= '<div class="cart_total">'.$cart_total.'</div>';
+              $menu_item .= '<span class="cart_total red"> '.$cart_total.'</span>';
               $menu_item .= '</a></li>';
             
             // Uncomment the line below to hide nav menu cart item when there are no items in the cart
@@ -97,6 +97,7 @@
           ?>
           
           <a href="#" id="menu-icon" class="icons default" data-icon="<?php echo $hamburger_icon; ?>" data-icon-hover="<?php echo $close_icon; ?>"><?php echo $hamburger_icon; ?></a>
+          <a href="<?php echo $cart_url; ?>" id="cart-icon" class="icons default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
           <?php 
             $separator = ''; 
             $before = ''; 

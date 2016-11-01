@@ -72,6 +72,8 @@ add_action('wp_enqueue_scripts', 'bd_enqueue_jquery', 1);
 function lvy_scripts() {
 	wp_enqueue_style( 'fa', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 	wp_enqueue_style( '1412Font', get_stylesheet_directory_uri() . '/fonts//1412/1412-QNXWMI.css' );
+	wp_enqueue_style( 'workshops', get_stylesheet_directory_uri() . '/page-workshop.css' );
+	wp_enqueue_style( 'owly', get_stylesheet_directory_uri() . '/owl/assets/owl.carousel.css' );
 	
 	wp_enqueue_script( 'isotope', get_stylesheet_directory_uri() . '/assets/js/jquery.isotope.min.js', '', '', true );
 	wp_enqueue_script( 'masonry', get_stylesheet_directory_uri() . '/assets/js/masonry.pkgd.min.js', '', '', true );
@@ -80,9 +82,10 @@ function lvy_scripts() {
 
 	wp_enqueue_script( 'history', get_stylesheet_directory_uri() . '/assets/js/jquery.history.js', '', '', true );	
 
-	//wp_enqueue_script( 'nav', get_stylesheet_directory_uri() . '/assets/js/nav.js', array( "jquery" ), '', true );
+	wp_enqueue_script( 'owl-js', get_stylesheet_directory_uri() . '/owl/owl.carousel.min.js', array( "jquery" ), '', true );
 	wp_enqueue_script( 'app', get_stylesheet_directory_uri() . '/assets/js/app.js', array( "jquery" ), '', true );
 	wp_enqueue_script( 'ui', get_stylesheet_directory_uri() . '/assets/js/ui.max.js', array( "jquery" ), '', true );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'lvy_scripts' );

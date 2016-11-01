@@ -958,11 +958,22 @@ button:hover, input[type="submit"]:hover {
 .mc-field-group:nth-child(odd) {
   margin-right: 6.75px;
 }
+select {
+  background-image: url(assets/chevron-down.svg);
+  background-position: 97% 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-right: 79px !important;
+}
 .red {
   color: #d33;
 }
 #menu-holder {
   position: relative;
+}
+#menu-holder .fa-shopping-cart {
+  font-size: 22px;
+  margin-right: 5px;
 }
 #menu-holder #menu-main-menu {
   overflow: hidden;
@@ -2521,7 +2532,7 @@ form.cart a.reset_variations, .variations_form a.reset_variations {
   line-height: 1;
   color: black;
   top: 19px;
-  right: 10px;
+  right: 45px;
   z-index: 5;
   text-indent: -9999px;
   background: url(assets/close.png);
@@ -2530,6 +2541,7 @@ form.cart a.reset_variations, .variations_form a.reset_variations {
   width: 20px;
   height: 20px;
   opacity: 0.4;
+  display: none;
 }
 form.cart .woocommerce-variation-availability, .variations_form .woocommerce-variation-availability {
   display: none !important;
@@ -3308,9 +3320,7 @@ form.cart button:hover, .variations_form button:hover, form.cart input[type=subm
   }
 }
 @media (max-width: 1200px) and (min-width: 1025px) {
-  /*=================================================
-=            TABLET SCREEN / LANDSCAPE            =
-=================================================*/  #menu-holder #menu-main-menu .menu-item, #menu-holder .page_item, #menu-holder.wide #menu-main-menu .menu-item, #menu-holder.wide .page_item {
+  #menu-holder #menu-main-menu .menu-item, #menu-holder .page_item, #menu-holder.wide #menu-main-menu .menu-item, #menu-holder.wide .page_item {
     width: 50%;
   }
   #menu-holder.float-right #menu-main-menu .menu-item, #menu-holder.float-right .page_item, #menu-holder.float-left #menu-main-menu .menu-item, #menu-holder.float-left .page_item {
@@ -3332,9 +3342,35 @@ form.cart button:hover, .variations_form button:hover, form.cart input[type=subm
     padding-bottom: 0px;
   }
 }
+@media (min-width: 1200px) {
+  #content {
+    padding-top: 84px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #content {
+    padding-top: 138px;
+  }
+}
+@media (min-width: 1025px) {
+  a#cart-icon {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  /*=================================================
+=            TABLET SCREEN / LANDSCAPE            =
+=================================================*/  a#cart-icon {
+    float: right;
+    margin-right: 7px;
+  }
+}
 @media (max-width: 1024px) and (min-width: 768px) {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  #block {
     height: 120% !important;
+  }
+  #content {
+    padding-top: 98px;
   }
   #content {
     padding-left: 20px !important;
@@ -3997,7 +4033,10 @@ form.cart button:hover, .variations_form button:hover, form.cart input[type=subm
   }
 }
 @media (max-width: 767px) {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  .woocommerce .cart .separator-module {
+  #content {
+    padding-top: 70px;
+  }
+  .woocommerce .cart .separator-module {
     padding-top: 12.5px;
   }
   .shop_table .product-name .table {
@@ -4571,6 +4610,9 @@ form.cart button:hover, .variations_form button:hover, form.cart input[type=subm
   }
   button, input[type="submit"] {
     width: 100%;
+  }
+  #content p {
+    padding-right: 0px;
   }
   #border-left, #border-right {
     display: none;

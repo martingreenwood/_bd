@@ -8,3 +8,34 @@ jQuery(document).ready(function(){
     	placeholder: 'Height (mm) x Width (mm)'
     });
 });
+
+jQuery(document).ready(function(){
+	
+	function owlLoaded() {
+		setTimeout(function() {
+			var o = jQuery('.owl-carousel').data('owlCarousel');
+			if(o) {
+				o.onResize();
+			}
+		}, 500);
+	}
+	
+	jQuery(".thumbnails").addClass("owl-carousel");
+	jQuery(".thumbnails").owlCarousel({
+		loop:true,
+		items:1,
+		onInitialized: owlLoaded,
+	});
+
+
+	jQuery('#workshop-menu').change(function() {
+		
+		var id = jQuery(this).val();
+		jQuery('.workshop-item').hide();
+		jQuery("#" + id).show();
+		
+	});
+	
+	jQuery('#workshop-menu').change();
+	
+});

@@ -39,14 +39,12 @@
 
 				// build the li item
 				if ($cart_contents_count == 0) {
-					$menu_item = '<li class="cart_meniu_item"><a class="wcmenucart-contents" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
+					$menu_item = '<li class="cart_meniu_item"><a class="wcmenucart-contents" href="'. $$cart_url .'" title="'. $start_shopping .'">';
 				} else {
 					$menu_item = '<li class="cart_meniu_item"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $viewing_cart .'">';
 				}
-				$menu_item .= '<div class="cart_icon"></div>Cart ';
-				if ( $cart_contents_count > 0 ) {
-				$menu_item .= '<span class="cart_contents">' .$cart_contents.'</span>';
-				}
+				$menu_item .= '<div class="cart_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>';
+				$menu_item .= '<span class="cart_contents">'.$cart_contents.'</span>';
 				$menu_item .= '</a></li>';
 			
 			// Uncomment the line below to hide nav menu cart item when there are no items in the cart

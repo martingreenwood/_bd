@@ -826,7 +826,7 @@ $(document).ready(function () {
   function resize() {
     headerheight = $('#header').outerHeight();
     footerheight = $('#footer').height();
-    headerheightadjust();
+    //headerheightadjust();
     footerheightadjust();
     adjustsiteborders();
     resizeiframes();

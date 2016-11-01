@@ -31,7 +31,7 @@
 
               // build the li item
               if ($cart_contents_count == 0) {
-                $menu_item = '<li class="cart_menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="wcmenucart-contents" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
+                $menu_item = '<li class="cart_menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $start_shopping .'">';
               } else {
                 $menu_item = '<li class="cart_menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $viewing_cart .'">';
               }

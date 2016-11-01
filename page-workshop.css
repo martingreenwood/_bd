@@ -1,0 +1,159 @@
+/**** Workshop Landing Page ****/
+
+.workshop-button {
+    width: auto;
+    background-color: #d33;
+    float: right;
+    padding: 0 40px;
+    margin: 30px 0;
+}
+
+.page-template-page-workshop .workshop-item {
+    /*display:none;*/
+}
+.page-template-page-workshop .grid-module.module.mpt-lb-0-5.mpb-lb-0 {
+    width: 50%;
+    float: right;
+}
+
+.page-template-page-workshop .grid-module.module.mpt-lb-0.mpb-lb-0, .page-template-page-workshop .grid-module.module.mpt-lb-1.mpb-lb-0, .page-template-page-workshop .grid-module.module.mpt-lb-0.mpb-lb-1 {
+    display: none;
+}
+.page-template-page-workshop .item.col.col-50.push-0.left {
+    width: 100%;
+}
+.page-template-page-workshop .item.col.col-25.push-50.left {
+    margin-left: 0;
+    width: 100%;
+}
+.page-template-page-workshop .masonry-item.item.col.col-25 {
+    width: 100%;
+}
+.workshop-thumb {
+    width: 36%;
+    float: left;
+}
+.thumbnails.columns-4 {
+
+    width: 100%;
+
+}
+
+.thumbnails.columns-4 a img {
+    width: 100%!important;
+}
+
+.thumbnails.columns-4 a {
+    display: block;
+    pointer-events: none;
+}
+
+.owl-carousel .owl-item img {
+    width: auto!important;
+    height: auto!important;
+}
+.workshop-content {
+    float: right;
+    width: 62%;
+}
+.workshop-wrapper {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.workshop-intro {
+    width: 62%;
+    float: right;
+    padding-bottom: 20px;
+}
+.dropdown {
+    margin-top: 20px;
+}
+
+.item.col.col-100.variations .large.lb-0-5.value {
+    width: 100%;
+    float: left;
+}
+
+.woocommerce-variation-add-to-cart.variations_button {
+    width: 98%;
+    float: right;
+    position: relative;
+}
+
+.item.col.col-100.variations {
+    width: 50%;
+    float: left;
+}
+
+.item.col.col-100.single_variation_wrap {
+    float: right;
+    width: 50%;
+}
+
+.page-template-page-workshop form.cart {
+    margin-top: 30px;
+}
+#map {
+    float: left;
+    width: 36%;
+}
+
+#workshop-footer {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.owl-carousel .owl-item img {
+	width:auto!important;
+	height:auto!important;
+}
+
+@media screen and (max-width:1200px) {
+
+#map {
+    float: none;
+    width: 100%;
+}
+
+.item.col.col-100.variations {
+    width: 100%;
+}
+
+.item.col.col-100.single_variation_wrap {
+    float: left;
+    width: 100%;
+}
+.woocommerce-variation-add-to-cart.variations_button {
+    width: 100%%;
+    float: left;
+    position: relative;
+}
+
+
+.workshop-intro {
+    width: 100%;
+    float: right;
+    padding-bottom: 20px;
+    padding: 20px;
+}
+
+.workshop-thumb {
+    width: 100%;
+    padding:20px;
+}
+.workshop-content {
+    float:none;
+    width: 100%;
+     padding:20px;
+}
+#workshop-footer {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    padding:0 20px
+}
+
+}

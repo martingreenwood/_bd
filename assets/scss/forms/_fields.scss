@@ -100,3 +100,14 @@ button, input[type="submit"] {
 		margin-right: 6.75px;
 	}
 }
+
+
+
+
+select {
+	background-image: url(assets/chevron-down.svg);
+	background-position: 97% 50%;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	padding-right: 79px !important;
+}
